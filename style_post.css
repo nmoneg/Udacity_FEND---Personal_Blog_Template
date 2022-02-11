@@ -1,0 +1,62 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 200px 675px 50px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "sn pt pt pt"
+    "ft ft ft ft";
+    border: 2px solid yellow;
+}
+
+.box {
+  border: 1px solid red;
+  background: #F8FA9D;
+}
+
+.header { 
+  grid-area:hd;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.post-title {
+  width: 70%;
+  margin: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.footer {
+  grid-area: ft;  
+}
+
+.sidenav {
+  grid-area: sn;
+}
+
+.social-media {
+
+}
+
+.post {
+  grid-area: pt;
+}
+
+.blog-post-card {
+  border: 1px solid red;
+  background: white;
+  margin: 2%;
+}
+
+.post-panel {
+  border: 1px solid red;
+  background: white;
+  height: 550px;
+  margin: 1%;
+  overflow: scroll;
+}

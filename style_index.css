@@ -1,0 +1,50 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 75px 150px 600px 100px;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "hd hd hd hd"
+    "sm pt pt pt"
+    "ft ft ft ft";
+    border: 2px solid yellow;
+}
+
+.box {
+  border: 1px solid red;
+  background: #F8FA9D;
+}
+
+.nav {
+  grid-area:nav;
+}
+
+.header { 
+  grid-area:hd;
+}
+
+.footer {
+  grid-area: ft;  
+}
+
+.feat {
+  grid-area: sm;
+}
+
+.posts {
+  grid-area: pt;
+}
+
+#blog-post-card {
+  border: 1px solid red;
+  background: white;
+  margin: 2%;
+}
+
+.scroll-container {
+  border: 1px solid red;
+  background: grey;
+  height: 500px;
+  margin: 1%;
+  overflow: scroll;
+}
