@@ -1,65 +1,122 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Template</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style_index.css">
   </head>
 
   <body>
   <div class = "container">
-    <nav class="nav box">Nav Bar</nav>
-    <header class="header box">Header</header>
-    <section class="feat box">
-      <h2>Featured</h2>
+
+    <!-- Navigation Links w/ Search Box -->
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+      <form class="search">
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+
+    <!-- Blog Title -->
+
+    <header class="header">
+      <h1>A Blog Title</h1>
+    </header>
+
+    <!-- Featured & Social Media Links -->
+
+    <section class="feat">
+      <h2 class="subheader">Featured</h2>
+      <ul class="feat-links">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+      <ul class="social-media">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
     </section>
-    <main class="posts box">
-      <h2>Recent Posts</h2>
+
+    <!-- Posts Panel -->
+
+    <main class="posts ">
+      <h2 class="subheader posts-hd">Recent Posts</h2>
       <div class="scroll-container">
-        <div id="blog-post-card">
-          <h3>Blog Post Title</h3>
-          <div id="card-image">
-              <img>
-          </div>
-          <button></button>
+
+        <!-- Post "Cards" Template -->
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post1.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
         </div>
-        <div id="blog-post-card">
-          <h3>Blog Post Title</h3>
-          <div id="card-image">
-              <img>
-          </div>
-          <button></button>
+
+        <!-- Filler Cards -->
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post2.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
         </div>
-        <div id="blog-post-card">
-          <h3>Blog Post Title</h3>
-          <div id="card-image">
-              <img>
-          </div>
-          <button></button>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post3.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
         </div>
-        <div id="blog-post-card">
-          <h3>Blog Post Title</h3>
-          <div id="card-image">
-              <img>
-          </div>
-          <button></button>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post4.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
         </div>
-        <div id="blog-post-card">
-          <h3>Blog Post Title</h3>
-          <div id="card-image">
-              <img>
-          </div>
-          <button></button>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post1.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
         </div>
-        <div id="blog-post-card">
-          <h3>Blog Post Title</h3>
-          <div id="card-image">
-              <img>
-          </div>
-          <button></button>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post2.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
         </div>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post3.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
+        </div>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post4.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
+        </div>
+        <div class="blog-post-card">
+          <h3 class="post-title">Blog Post Title</h3>
+          <img class="card-image" src="images/post1.png" alt="Post Image">
+          <p class="post-sum">Post Summary Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <a class="post-link" href="#" target="_blank">View Post</a>
+        </div>
+        
       </div>
     </main>
-    <div class="footer box">Footer</div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <footer class="footer-text">Copyright 2022</footer> 
+    </div>
+
   </div>
   </body>
 </html>
