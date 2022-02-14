@@ -36,6 +36,7 @@
 .all-links:link {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+  color: inherit;
 }
 
 .all-links:hover {
@@ -45,7 +46,7 @@
 }
 
 .all-links:visited {
-  color: #8BDB81;
+  color: inherit;
 }
 
 .search {
