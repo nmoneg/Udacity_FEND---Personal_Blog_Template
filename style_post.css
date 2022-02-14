@@ -1,62 +1,156 @@
-.container {
+.page-layout {
     display:grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 200px 675px 50px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 150px 675px 100px;
     grid-template-areas: 
     "hd hd hd hd"
-    "sn pt pt pt"
+    "pt sn sn sn"
     "ft ft ft ft";
-    border: 2px solid yellow;
 }
 
-.box {
-  border: 1px solid red;
-  background: #F8FA9D;
+.all-links:link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #1E6F5C;
+}
+
+.all-links:hover {
+  font-size: 110%;
+  color:#29BB89;
+  font-weight: bold;
+}
+
+.all-links:visited {
+  color: inherit;
+}
+
+.all-header-font {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #1E6F5C;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .header { 
   grid-area:hd;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .post-title {
-  width: 70%;
+  width: 60%;
   margin: 0;
+  text-align: center;
+  align-self: center;
+  font-size: 60pt;
+  position: relative;
+  left: 100px;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
+  border: 10px solid #8BDB81;
+  border-radius: 15px;
+  margin: 0 0 -70px 250px;
+  padding: 0 10px;
+}
+
+.about-info {
+  list-style: none;
+  display: flex;
+  margin: 1px 0 0 -30px;
+  position: relative;
+  bottom: 15px;
+}
+
+.about-text {
+  position: relative;
+  top: 15px;
+  font: bold 11pt "Poppins", sans-serif;
+  text-align: justify;
+  color: #1E6F5C;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px
 }
 
 .footer {
-  grid-area: ft;  
+  grid-area: ft;
+  background-color: #03744e;
+  border-radius: 15px;
+  margin: 10px 0px 0px 0px;
+}
+
+.footer-text {
+  margin: 25px 0 0 20px;
+  font-size: 20pt;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .sidenav {
   grid-area: sn;
+  display: flex;
+  height: 85%;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #29BB89;
+  border-radius: 15px;
+  margin: 80px 0px 0px -30px;
+  color: #1E6F5C;
+  font-size: 15pt;
+}
+
+.navlinks {
+  margin-top: 0px;
+  margin-right: 30px;
+  list-style: none;
 }
 
 .social-media {
-
+  display: flex;
+  list-style: none;
+  position: relative;
+  right: 15px;
 }
 
-.post {
-  grid-area: pt;
-}
-
-.blog-post-card {
-  border: 1px solid red;
-  background: white;
-  margin: 2%;
+.sm-icons {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 
 .post-panel {
-  border: 1px solid red;
+  grid-area: pt;
   background: white;
   height: 550px;
-  margin: 1%;
-  overflow: scroll;
+  margin: 80px 3% 3% 3%;
+  padding: 5px;
+  inline-size: 90%;
+  overflow-y: auto;
+  justify-content: center;
+  font-size: 13pt;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
 }
+
+.post-panel::-webkit-scrollbar {
+  width: 20px;
+}
+
+.post-panel::-webkit-scrollbar-track {
+  background-color: #E7FBBE;
+  border-radius: 10px;
+}
+
+.post-panel::-webkit-scrollbar-thumb {
+  background-color: #8BDB81;
+  border-radius: 10px;
+} 

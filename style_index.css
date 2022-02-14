@@ -1,4 +1,4 @@
-.container {
+.page-layout {
   display:grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 75px 150px 600px 100px;
@@ -148,7 +148,6 @@
 } 
 
 .blog-post-card {
-  
   border: 1px groove;
   border-radius: 15px;
   margin: 1%;
