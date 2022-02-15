@@ -9,6 +9,13 @@
   "ft ft ft ft";
 }
 
+@media (max-width: 800px) {
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .subheader {
   font-size: 25pt;
 }

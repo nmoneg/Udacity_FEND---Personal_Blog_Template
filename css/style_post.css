@@ -8,6 +8,22 @@
     "ft ft ft ft";
 }
 
+@media (max-width: 800px) {
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    visibility:hidden;
+  }
+}
+
 .header { 
   grid-area: hd;
   display: flex;
