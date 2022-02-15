@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+Antique");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.all-links:link {
+    font-family: "Raleway", sans-serif;
+}
+
+#search-box {
+    font: 20px "Raleway", sans-serif;
+}
+
+#search-button {
+    font: 20px "Raleway", sans-serif;
+}
+
+.all-header-font {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.about-text {
+    font: bold 11pt "Poppins", sans-serif;
+}
+
+.post-sum {
+    font-family: "Poppins", sans-serif;
+}
+
+.post-panel {
+    font-family: "Poppins", sans-serif;
+  }
+
+.footer-text {
+    font: 20pt "Poppins", sans-serif;
+}

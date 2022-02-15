@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+Antique");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("typography.css");
 
-.page-layout {
+.page-layout-post {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 150px 675px 100px;
@@ -18,6 +16,11 @@
   flex-direction: row;
 }
 
+.all-header-font {
+  color: #1E6F5C;
+  text-transform: uppercase;
+}
+
 .post-title {
   width: 60%;
   margin: 0;
@@ -27,12 +30,6 @@
   position: relative;
   top: 50px;
   left: 100px;
-}
-
-.all-header-font {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  color: #1E6F5C;
-  text-transform: uppercase;
 }
 
 .about {
@@ -56,7 +53,6 @@
 .about-text {
   position: relative;
   top: 15px;
-  font: bold 11pt "Poppins", sans-serif;
   text-align: justify;
   color: #1E6F5C;
 }
@@ -87,8 +83,7 @@
 
 .all-links:link {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  color: #1E6F5C;
+  color: inherit;
 }
 
 .all-links:hover {
@@ -131,7 +126,6 @@
   justify-content: center;
   font-size: 13pt;
   text-align: justify;
-  font-family: "Poppins", sans-serif;
 }
 
 .post-panel::-webkit-scrollbar {
@@ -157,12 +151,14 @@
 
 .footer-text {
   margin: 25px 0 0 20px;
-  font: 20pt "Poppins", sans-serif;
   color: white;
 }
 
+
+/* For screens smaller than 1200px: */
+
 @media (max-width: 1200px) {
-  .page-layout {
+  .page-layout-post {
     width: 100%;
     display: flex;
     flex-direction: column;

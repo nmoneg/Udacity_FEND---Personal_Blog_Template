@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+Antique");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("typography.css");
 
-.page-layout {
+.page-layout-ind {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 75px 150px 600px 100px;
@@ -11,10 +9,6 @@
   "hd hd hd hd"
   "sm pt pt pt"
   "ft ft ft ft";
-}
-
-.subheader {
-  font-size: 25pt;
 }
 
 .nav {
@@ -36,10 +30,8 @@
   color: white;
 }
 
-
 .all-links:link {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
   color: inherit;
 }
 
@@ -63,7 +55,6 @@
 #search-box {
   height: 30px;
   border-radius: 10px;
-  font: 20px "Raleway", sans-serif;
   padding: 0 0 0 15px;
 }
 
@@ -71,13 +62,6 @@
   height: 40px;
   width: 100px;
   border-radius: 10px;
-  font: 20px "Raleway", sans-serif;
-}
-
-.all-header-font {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  color: #1E6F5C;
-  text-transform: uppercase;
 }
 
 .header { 
@@ -85,6 +69,15 @@
   text-align: center;
   align-self: center;
   font-size: 30pt;
+}
+
+.all-header-font {
+  color: #1E6F5C;
+  text-transform: uppercase;
+}
+
+.subheader {
+  font-size: 25pt;
 }
 
 .feat {
@@ -180,7 +173,6 @@
 .post-sum {
   font-size: 13pt;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .post-link {
@@ -194,15 +186,10 @@
   margin: 10px 0 0 0;
 }
 
-.footer-text {
-  margin: 25px 0 0 20px;
-  font-size: 20pt;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
+/* For screens smaller than 800px: */
 
 @media (max-width: 800px) {
-  .page-layout {
+  .page-layout-ind {
     width: 100%;
     display: flex;
     flex-direction: column;
