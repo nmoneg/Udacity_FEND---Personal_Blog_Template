@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
+@media (max-width: 800px) {
+  .page-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    visibility:hidden;
+  }
+}
+
 .page-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -10,22 +22,6 @@
     "hd hd hd hd"
     "pt sn sn sn"
     "ft ft ft ft";
-}
-
-@media (max-width: 800px) {
-  .page-layout {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about {
-    visibility:hidden;
-  }
 }
 
 .header { 
@@ -142,7 +138,7 @@
   margin: 80px 3% 3% 3%;
   padding: 5px;
   inline-size: 90%;
-  overflow-y: auto;
+  overflow: scroll;
   justify-content: center;
   font-size: 13pt;
   text-align: justify;
