@@ -207,10 +207,15 @@
   .search {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   #blog-title-mobile {
     margin: 10px;
+  }
+
+  .feat {
+    margin: 0;
   }
 
   .feat-links {
